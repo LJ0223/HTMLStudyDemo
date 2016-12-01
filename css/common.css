@@ -1,0 +1,317 @@
+/* 样式重置 */
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 12px;
+    vertical-align: baseline;
+    background: transparent;
+    font-style:normal;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section{
+    display: block;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+a,img,button {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+    border: none;
+    text-decoration:none;
+}
+a,a:link,a:visited,a:hover,a:active {
+    text-decoration: none;
+    color: #6f6f6f;
+}
+
+html {
+    font-size: 12px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background: #f1f1f1;
+    color:#333;
+    font-family: "Microsoft YaHei","Helvetica Neue", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow-x:hidden;
+}
+.container_pc{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container_pc:after{
+    content:"";
+    clear: both;
+    display: block;
+}
+
+/*浮动 , 清除浮动*/
+.floatl{
+    float: left;
+}
+
+.floatr{
+    float: right;
+    text-align: right;
+}
+.clearFix{
+    clear: both;
+}
+.clearFix:after{
+    display: block;
+    clear:both;
+    content:"";
+}
+
+
+/*输入框，下拉框*/
+input[type=text],input[type=password],select{
+    vertical-align: middle;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    border: none;
+    margin: 0;
+    outline: none;
+    text-align: right;
+    line-height:50px;
+}
+
+input[type=text],input[type=password]{
+    color:#000 !important;
+    font-size:14px !important;
+    font-weight:bold !important;
+}
+input[type='radio'],
+input[type='checkbox'] {
+    display: none;
+    cursor: pointer;
+}
+input[type='radio']:focus, input[type='radio']:active,
+input[type='checkbox']:focus,
+input[type='checkbox']:active {
+    outline: none;
+}
+input[type='radio'] + label,
+input[type='checkbox'] + label {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    padding-left: 25px;
+    color: #999;
+}
+input[type='radio']:checked + label, input[type='checkbox']:checked + label{
+    color: #333;
+}
+input[type='radio'] + label:before, input[type='radio'] + label:after,
+input[type='checkbox'] + label:before,
+input[type='checkbox'] + label:after {
+    content: '';
+    font-family: helvetica;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    left: 4px;
+    bottom: 13px;
+    text-align: center;
+    position: absolute;
+    top:17px;
+}
+input[type='radio'] + label:before,
+input[type='checkbox'] + label:before {
+    background-color: #fafafa;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+input[type='radio'] + label:after,
+input[type='checkbox'] + label:after {
+    color: #fff;
+}
+input[type='radio']:checked + label:before,
+input[type='checkbox']:checked + label:before {
+    border: 1px solid #333;
+}
+
+/*Radio Specific styles*/
+input[type='radio'] + label:before {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    border:1px solid #999;
+}
+input[type='radio']:checked + label:after {
+    content: '';
+    position: absolute;
+    top: 21px;
+    left: 8px;
+    width: 9px;
+    height: 9px;
+    background: #333;
+    border-radius: 50%;
+}
+input[type='radio']:checked + label:after, input[type='radio']:checked + label:hover:after {
+    color: #fff;
+}
+/*清除ie的默认选择框样式清除，隐藏下拉箭头*/
+select::-ms-expand{
+    display: none;
+}
+input[placeholder], [placeholder], *[placeholder] {
+    color:#333;
+    font-family: 'webfont';
+    font-size: 12px;
+    font-weight: 100;
+    -webkit-user-modify:
+            read-write-plaintext-only;
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    color: #333;
+    font-family: 'webfont';
+    font-size: 12px;
+    font-weight: 100;
+    -webkit-user-modify:
+            read-write-plaintext-only;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color: #333;
+    font-family: 'webfont';
+    font-size: 12px;
+    font-weight: 100;
+    -webkit-user-modify:
+            read-write-plaintext-only;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #333;
+    font-family: 'webfont';
+    font-size: 12px;
+    font-weight: 100;
+    -webkit-user-modify:
+            read-write-plaintext-only;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    color: #333;
+    font-family: 'webfont';
+    font-size: 12px;
+    font-weight: 100;
+    -webkit-user-modify:
+            read-write-plaintext-only;
+}
+button[disabled],input[disabled]{
+    cursor:default;
+}
+:-moz-placeholder{
+    text-align: left;
+}
+::-moz-placeholder{
+    text-align: left;
+}
+:-ms-input-placeholder{
+    text-align: left;
+}
+::-webkit-input-placeholder{
+    text-align: left;
+}
+
+/*字体大小*/
+.font36px{
+    font-size: 36px;
+}
+.font24px{
+    font-size: 24px;
+}
+.font18px{
+    font-size: 18px;
+}
+.font14px{
+    font-size: 14px;
+}
+.font10px{
+    font-size: 10px;
+}
+.font8px{
+    font-size: 8px;
+}
+/*字体样式*/
+.fontbold{
+    font-weight:bold;
+}
+/*字体颜色*/
+.col_white{
+    color:#fff;
+}
+
+.col_black{
+    color:#000;
+}
+
+.col_orange{
+    color:#fd861d;
+}
+.color999{
+    color:#999;
+}
+.color666 {
+    color:#666;
+}
+.color333 {
+    color: #333;
+}
+
+/*背景*/
+.bg_yellow{
+    background-color:#fecf2f;
+}
+.bg_orange{
+    background-color:#ff8326;
+}
+
+/*icon*/
+.icon{
+    width: 15px;
+    height: 15px;
+}
+
+/*边距*/
+.margin15{
+    margin: 0 15px;
+}
+.padding15{
+    padding: 0 15px;
+}
+/*高度*/
+.height44{
+    height: 44px;
+    line-height: 44px;
+}
+.height30{
+    height:30px;
+    line-height:30px;
+}
+.textalignr{
+    text-align: right;
+}

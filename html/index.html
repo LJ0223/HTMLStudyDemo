@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<body lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable = no">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,maximum-scale=1, minimum-scale=1.0, user-scalable=0">
+    <meta name="format-detection" content="telephone=no">
+    <title>Title</title>
+    <link href="../css/common.css" rel="stylesheet">
+
+    <script src="../js/jquery-1.12.0.min.js"></script>
+    <!--<script src="../js/layer.js" type="text/javascript"></script>-->
+    <!--<script src="../js/fastclick.js" type="text/javascript"></script>-->
+
+    <style>
+        .content {
+            padding: 30px 20px;
+        }
+
+        h1 {
+            font-size: 18px;
+        }
+
+        .article-title {
+            width: 100%;
+        }
+
+        .article-title a {
+            font-size: 16px;
+        }
+
+        .article-item {
+            padding: 10px;
+            height: auto;
+        }
+
+        .article-item:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .article-content {
+            padding: 10px 0;
+            border-bottom: 1px #333 solid;
+        }
+
+        .article-content a {
+            height: 100%;
+            width: 20%;
+        }
+
+        .article-content img {
+            width: 100%;
+            height: auto;
+        }
+
+        .article-content p {
+            padding-left: 10px;
+            width: 80%;
+            word-break: break-all;
+            text-align: left;
+        }
+
+        p, img {
+            display: block;
+        }
+
+        .article-content-noImg {
+            width: 100%;
+            padding: 10px 0;
+            border-bottom: 1px #333 solid;
+        }
+
+        /*默认样式，主要是position:fixed实现屏幕绝对定位*/
+        #gotoTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            padding: 9px 4px;
+            width: 40px;
+            text-align: center;
+            border: 1px solid #e0e0e0;
+            background: orangered;
+            color: #fff;
+        }
+
+        /*用CSS表达式(expression)来实现ie6下position:fixed效果*/
+        #gotoTop {
+            _position: absolute;
+            _top: expression(documentElement.scrollTop + documentElement.clientHeight * 3/4 + "px")
+        }
+
+        /*鼠标进入的反馈效果*/
+        #gotoTop:hover {
+            background: #5CB542;
+
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <h1>列表</h1>
+    <div id="page">
+        <div class="article-item">
+            <div class="article-title floatl">
+                <a>小白的一年试炼</a>
+            </div>
+            <div class="floatl article-content">
+                <a class="floatl">
+                    <img src="../images/haha.png" height="262" width="426"/>
+                </a>
+
+                <p class="floatl">可就是发动机的快速方便都是好离开家还是贷款机构你，收到了广泛的时间发布，数据库的股份及湖北省那几乎是空白地方结不结婚vsdbfjvbjh</p>
+            </div>
+        </div>
+
+        <div class="article-item">
+            <div class="article-title floatl">
+                <a>小白的一年试炼</a>
+            </div>
+            <div class="floatl article-content-noImg">
+                <p class="floatl lineP">可就是发动机的快速方便都是好离开家还是贷款机构你，收到了广泛的时间发布，数据库的股份及湖北省那几乎是空白地方结不结婚vsdbfjvbjh</p>
+            </div>
+        </div>
+
+        <div class="article-item">
+            <div class="article-title floatl">
+                <a>小白的一年试炼</a>
+            </div>
+            <div class="floatl article-content">
+                <a class="floatl">
+                    <img src="../images/haha.png" height="262" width="426"/>
+                </a>
+
+                <p class="floatl">可就是发动机的快速方便都是好离开家还是贷款机构你，收到了广泛的时间发布，数据库的股份及湖北省那几乎是空白地方结不结婚vsdbfjvbjh</p>
+            </div>
+        </div>
+
+        <div class="article-item">
+            <div class="article-title floatl">
+                <a>小白的一年试炼</a>
+            </div>
+            <div class="floatl article-content-noImg">
+                <p class="floatl lineP">可就是发动机的快速方便都是好离开家还是贷款机构你，收到了广泛的时间发布，数据库的股份及湖北省那几乎是空白地方结不结婚vsdbfjvbjh</p>
+            </div>
+        </div>
+
+        <div class="article-item">
+            <div class="article-title floatl">
+                <a>小白的一年试炼</a>
+            </div>
+            <div class="floatl article-content">
+                <a class="floatl">
+                    <img src="../images/haha.png" height="262" width="426"/>
+                </a>
+
+                <p class="floatl">可就是发动机的快速方便都是好离开家还是贷款机构你，收到了广泛的时间发布，数据库的股份及湖北省那几乎是空白地方结不结婚vsdbfjvbjh</p>
+            </div>
+        </div>
+
+        <div class="article-item">
+            <div class="article-title floatl">
+                <a>小白的一年试炼</a>
+            </div>
+            <div class="floatl article-content-noImg">
+                <p class="floatl lineP">可就是发动机的快速方便都是好离开家还是贷款机构你，收到了广泛的时间发布，数据库的股份及湖北省那几乎是空白地方结不结婚vsdbfjvbjh</p>
+            </div>
+        </div>
+
+        <div class="article-item">
+            <div class="article-title floatl">
+                <a>小白的一年试炼</a>
+            </div>
+            <div class="floatl article-content">
+                <a class="floatl">
+                    <img src="../images/haha.png" height="262" width="426"/>
+                </a>
+
+                <p class="floatl">可就是发动机的快速方便都是好离开家还是贷款机构你，收到了广泛的时间发布，数据库的股份及湖北省那几乎是空白地方结不结婚vsdbfjvbjh</p>
+            </div>
+        </div>
+
+        <div class="article-item">
+            <div class="article-title floatl">
+                <a>小白的一年试炼</a>
+            </div>
+            <div class="floatl article-content-noImg">
+                <p class="floatl lineP">可就是发动机的快速方便都是好离开家还是贷款机构你，收到了广泛的时间发布，数据库的股份及湖北省那几乎是空白地方结不结婚vsdbfjvbjh</p>
+            </div>
+        </div>
+
+        <div class="article-item">
+            <div class="article-title floatl">
+                <a>小白的一年试炼</a>
+            </div>
+            <div class="floatl article-content">
+                <a class="floatl">
+                    <img src="../images/haha.png" height="262" width="426"/>
+                </a>
+
+                <p class="floatl">可就是发动机的快速方便都是好离开家还是贷款机构你，收到了广泛的时间发布，数据库的股份及湖北省那几乎是空白地方结不结婚vsdbfjvbjh</p>
+            </div>
+        </div>
+
+        <div class="article-item">
+            <div class="article-title floatl">
+                <a>小白的一年试炼</a>
+            </div>
+            <div class="floatl article-content-noImg">
+                <p class="floatl lineP">可就是发动机的快速方便都是好离开家还是贷款机构你，收到了广泛的时间发布，数据库的股份及湖北省那几乎是空白地方结不结婚vsdbfjvbjh</p>
+            </div>
+        </div>
+
+        <div class="article-item">
+            <div class="article-title floatl">
+                <a>小白的一年试炼</a>
+            </div>
+            <div class="floatl article-content">
+                <a class="floatl">
+                    <img src="../images/haha.png" height="262" width="426"/>
+                </a>
+
+                <p class="floatl">可就是发动机的快速方便都是好离开家还是贷款机构你，收到了广泛的时间发布，数据库的股份及湖北省那几乎是空白地方结不结婚vsdbfjvbjh</p>
+            </div>
+        </div>
+
+        <div class="article-item">
+            <div class="article-title floatl">
+                <a>小白的一年试炼</a>
+            </div>
+            <div class="floatl article-content-noImg">
+                <p class="floatl lineP">可就是发动机的快速方便都是好离开家还是贷款机构你，收到了广泛的时间发布，数据库的股份及湖北省那几乎是空白地方结不结婚vsdbfjvbjh</p>
+            </div>
+        </div>
+
+        <div class="article-item">
+            <div class="article-title floatl">
+                <a>小白的一年试炼</a>
+            </div>
+            <div class="floatl article-content">
+                <a class="floatl">
+                    <img src="../images/haha.png" height="262" width="426"/>
+                </a>
+
+                <p class="floatl">可就是发动机的快速方便都是好离开家还是贷款机构你，收到了广泛的时间发布，数据库的股份及湖北省那几乎是空白地方结不结婚vsdbfjvbjh</p>
+            </div>
+        </div>
+
+        <div class="article-item">
+            <div class="article-title floatl">
+                <a>小白的一年试炼</a>
+            </div>
+            <div class="floatl article-content-noImg">
+                <p class="floatl lineP">可就是发动机的快速方便都是好离开家还是贷款机构你，收到了广泛的时间发布，数据库的股份及湖北省那几乎是空白地方结不结婚vsdbfjvbjh</p>
+            </div>
+        </div>
+
+        <div class="article-item">
+            <div class="article-title floatl">
+                <a>小白的一年试炼</a>
+            </div>
+            <div class="floatl article-content">
+                <a class="floatl">
+                    <img src="../images/haha.png" height="262" width="426"/>
+                </a>
+
+                <p class="floatl">可就是发动机的快速方便都是好离开家还是贷款机构你，收到了广泛的时间发布，数据库的股份及湖北省那几乎是空白地方结不结婚vsdbfjvbjh</p>
+            </div>
+        </div>
+
+        <div class="article-item">
+            <div class="article-title floatl">
+                <a>小白的一年试炼</a>
+            </div>
+            <div class="floatl article-content-noImg">
+                <p class="floatl lineP">可就是发动机的快速方便都是好离开家还是贷款机构你，收到了广泛的时间发布，数据库的股份及湖北省那几乎是空白地方结不结婚vsdbfjvbjh</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="gotoTop" class="hover">TOP</div>
+
+</div>
+</body>
+<script>
+
+
+    $("#gotoTop").click(function () {
+        var speed=200;//滑动的速度
+        $('body,html').animate({ scrollTop: 0 }, speed);
+        return false;
+    });
+</script>
+</html>

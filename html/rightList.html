@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>快速定位Demo</title>
+    <link href="../css/common.css" rel="stylesheet">
+
+    <!--<script src="../js/jquery-1.12.0.min.js"></script>-->
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            font-family: Microsoft Yahei;
+        }
+
+        a {
+            color: #424242;
+            text-decoration: none;
+        }
+
+        .abe-fl {
+            float: left
+        }
+
+        .abe-fr {
+            float: right
+        }
+
+        .simu-brand {
+            position: absolute;
+            left: 10px;
+            width: 200px;
+            border: 1px solid #ffcc00;
+            background: #fff;
+            padding: 5px;
+            height: 499px;
+            z-index: 999;
+        }
+
+        .simu-brand .letter-abc {
+            width: 17px;
+        }
+
+        .simu-brand .letter-abc a {
+            display: block;
+            width: 17px;
+            height: 17px;
+            background: #e2e2e2;
+            font-size: 12px;
+            text-align: center;
+            line-height: 17px;
+            margin-bottom: 1px;
+            cursor: pointer;
+        }
+
+        }
+        .simu-brand .letter-abc a:active {
+            background: #fed018;
+        }
+
+        .simu-brand dl {
+            display: block;
+            width: 160px;
+            padding-right: 18px;
+            height: 467px;
+            overflow: auto;
+            position: relative;
+        }
+
+        .simu-brand dl dt {
+            display: block;
+            width: 160px;
+            background: #e2e2e2;
+            height: 28px;
+            text-align: center;
+            line-height: 28px;
+        }
+
+        .simu-brand dl dt a {
+            display: block;
+            height: 28px;
+        }
+
+        .simu-brand dl dd {
+            display: block;
+            width: 160px;
+            padding: 3px 0;
+            font-size: 12px;
+            text-indent: 8px;
+            border-bottom: 1px solid #f5f5f5;
+        }
+
+        .simu-brand dl dd:hover {
+            background: #ffcc00;
+        }
+    </style>
+</head>
+<body>
+<!-- HTML代码片段中请勿添加<body>标签 //-->
+<div id="container">
+    <div class="simu-brand">
+        <div class="letter-abc abe-fl">
+            <a id="ida">A</a>
+            <a id="idb">B</a>
+            <a id="idc">C</a>
+            <a id="idd">D</a>
+            <a id="ide">E</a>
+            <a href="">F</a>
+            <a href="#">G</a>
+            <a href="#">H</a>
+            <a href="#">I</a>
+            <a href="#">J</a>
+            <a href="#">K</a>
+            <a href="#">L</a>
+            <a href="#">M</a>
+            <a href="#">N</a>
+            <a href="#">O</a>
+            <a href="#">P</a>
+            <a href="#">Q</a>
+            <a href="#">R</a>
+            <a href="#">S</a>
+            <a href="#">T</a>
+            <a href="#">U</a>
+            <a href="#">V</a>
+            <a href="#">W</a>
+            <a href="#">X</a>
+            <a href="#">Y</a>
+            <a href="#">Z</a>
+        </div>
+        <dl class="brand-dl abe-fr">
+            <dt><a id="tgida">A</a></dt>
+            <dd><a href="#">A 奥迪</a></dd>
+            <dd><a href="#">A 阿斯顿马丁</a></dd>
+            <dd><a href="#">A 安驰</a></dd>
+            <dd><a href="#">A 阿尔法罗密欧</a></dd>
+
+            <dt><a id="tgidb">B</a></dt>
+            <dd><a href="#">B 宝马</a></dd>
+            <dd><a href="#">B 宝骏</a></dd>
+            <dd><a href="#">B 别克</a></dd>
+            <dd><a href="#">B 本田</a></dd>
+
+            <dt><a id="tgidc">C</a></dt>
+            <dd><a href="#">C 宝马</a></dd>
+            <dd><a href="#">C 宝骏</a></dd>
+            <dd><a href="#">C 别克</a></dd>
+            <dd><a href="#">C 本田</a></dd>
+            <dd><a href="#">C 宝马</a></dd>
+            <dd><a href="#">C 宝骏</a></dd>
+            <dd><a href="#">C 别克</a></dd>
+            <dd><a href="#">C 本田</a></dd>
+            <dd><a href="#">C 宝马</a></dd>
+            <dd><a href="#">C 宝骏</a></dd>
+            <dd><a href="#">C 别克</a></dd>
+            <dd><a href="#">C 本田</a></dd>
+
+            <dt><a id="tgidd">D</a></dt>
+            <dd><a href="#">D 宝马</a></dd>
+            <dd><a href="#">D 宝骏</a></dd>
+            <dd><a href="#">D 别克</a></dd>
+            <dd><a href="#">D 本田</a></dd>
+            <dd><a href="#">D 宝马</a></dd>
+            <dd><a href="#">D 宝骏</a></dd>
+            <dd><a href="#">D 别克</a></dd>
+            <dd><a href="#">D 本田</a></dd>
+            <dd><a href="#">D 宝马</a></dd>
+            <dd><a href="#">D 宝骏</a></dd>
+            <dd><a href="#">D 别克</a></dd>
+            <dd><a href="#">D 本田</a></dd>
+
+            <dt><a id="tgide">E</a></dt>
+            <dd><a href="#">E 宝马</a></dd>
+            <dd><a href="#">E 宝骏</a></dd>
+            <dd><a href="#">E 别克</a></dd>
+            <dd><a href="#">E 本田</a></dd>
+            <dd><a href="#">E 宝马</a></dd>
+            <dd><a href="#">E 宝骏</a></dd>
+            <dd><a href="#">E 别克</a></dd>
+            <dd><a href="#">E 本田</a></dd>
+            <dd><a href="#">E 宝马</a></dd>
+            <dd><a href="#">E 宝骏</a></dd>
+            <dd><a href="#">E 别克</a></dd>
+            <dd><a href="#">E 本田</a></dd>
+        </dl>
+    </div>
+</div>
+<!-- 推荐开源CDN来选取需引用的外部JS //-->
+<script type="text/javascript" src="http://cdn.gbtags.com/jquery/1.11.1/jquery.min.js"></script>
+
+</body>
+<script>
+    $(document).ready(function(e) {
+        $(".letter-abc a").click(function()
+        {
+            //取当前点击对象id
+            var id = $(this).attr("id");
+            //取点击字母所对应的品牌名称标记位置ID
+            var tgid = 'tg' + id;
+            // 取字母标记位置top值 + 当前dl滚动条的top值 = 当前需要的top值
+            var tgtop = $("#" + tgid).position().top + $(".brand-dl").scrollTop();
+
+            //这里利用jq animate动画给scrolltop 添加一个动画效果，瞬间高大上
+            $(".brand-dl").animate({
+                scrollTop:tgtop
+            }, 500);
+
+        });
+    });
+</script>
+</html>
